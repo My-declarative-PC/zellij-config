@@ -148,8 +148,9 @@ keybinds clear-defaults=true {
         bind "Alt j" { MoveFocus "down"; }
         bind "Alt k" { MoveFocus "up"; }
         bind "Alt l" { MoveFocusOrTab "right"; }
-        bind "Alt n" { NewPane; }
         bind "Alt o" { MoveTab "right"; }
+        bind "Alt p" { NewPane; }
+        bind "Alt t" { NewTab; }
     }
     shared_except "locked" "renametab" "renamepane" {
         bind "Ctrl g" { SwitchToMode "locked"; }
@@ -291,7 +292,7 @@ default_shell "fish"
 //   - true (default, enabled)
 //   - false
 // 
-// pane_frames false
+pane_frames false
  
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
